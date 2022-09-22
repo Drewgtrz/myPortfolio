@@ -23,7 +23,7 @@ body{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    border: 1px solid #393E46;
+    border: 1px solid #393E46;  /*border for reference only*/
   }
   
   /* Links inside the navbar */
@@ -40,6 +40,7 @@ body{
   .navbar a:hover {
     background: #232931;
     color: #4ECCA3;
+    border-bottom: 3px solid #4ECCA3;
   }
   
   /* landing page content */
