@@ -1,49 +1,245 @@
-*{
-  box-sizing: border-box;  
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #232931;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #232931;
+  min-width: 400px;
+  color: white;
+  font-size: 1.4rem;
 }
 
-.home{
-    color:white;
-}
-
-.home{
-    height: 100vh;
-    width: 100%;
-}
-/* The navigation bar */
+/* --------------Navbar--------------- */
 .navbar {
-    overflow: hidden;
-    background-color: #232931;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    border: 1px solid #393E46;  /*border for reference only*/
+  overflow: hidden;
+  background-color: #232931;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border: 1px solid #393e46; /*border for reference only*/
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #232931;
+  color: #4ecca3;
+  border-bottom: 3px solid #4ecca3;
+}
+
+/* --------------Home--------------- */
+.home {
+  margin-top: 48px; /* Add a top margin to avoid content overlay */
+  border: 1px solid #393e46; /*for reference only delete later*/
+  width: 100%;
+  height: 100vh;
+}
+.home article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid coral;
+  margin-top: 40vh;
+}
+.home h1 {
+  border: 1px solid pink;
+  margin: auto;
+}
+
+.home p {
+  border: 1px solid pink;
+  margin: auto;
+}
+
+/* --------------About--------------- */
+
+.about {
+  border: 1px solid #393e46; /*for reference only delete later*/
+  width: 100%;
+  height: 100vh;
+  background-color: #393e46;
+}
+
+.about h1 {
+  border: 1px solid pink; /*for reference only delete later*/
+}
+
+.about-me {
+  width: 50%;
+  float: left;
+  border: 1px solid coral; /*for reference only delete later*/
+  padding: 0 30px 15px;
+  margin-top: 100px;
+}
+
+/* skils */
+.skills {
+  width: 50%;
+  float: left;
+  border: 1px solid coral; /*for reference only delete later*/
+  padding: 0 30px 15px;
+  margin-top: 100px;
+}
+
+/* --------------Work--------------- */
+
+.work {
+  border: 1px solid #393e46; /*for reference only delete later*/
+  width: 100%;
+  height: 100vh;
+}
+
+/* --------------Contact--------------- */
+
+.contact {
+  border: 1px solid #393e46; /*for reference only delete later*/
+  width: 100%;
+  height: 100vh;
+}
+
+/* =========800px and below css================================================== */
+@media screen and (max-width: 800px) {
+  /* --------------About--------------- */
+  .about {
+    border: 1px solid #393e46; /*for reference only delete later*/
+    width: 100%;
+    height: 100vh;
+    background-color: #393e46;
   }
-  
-  /* Links inside the navbar */
+
+  .about-me {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 50px 0;
+  }
+
+  /* skils */
+  .skills {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 50px;
+  }
+  /* --------------Work--------------- */
+  /* --------------Contact--------------- */
+}
+
+/* ===========600px and below css============================================== */
+
+@media screen and (max-width: 600px) {
+  .navbar{
+    direction:rtl;
+    display: flex;
+    justify-content: center;
+  }
+
   .navbar a {
-    float: right;
-    display: block;
+    border: 1px solid coral; /*for reference only delete later*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1.2rem;
   }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #232931;
-    color: #4ECCA3;
-    border-bottom: 3px solid #4ECCA3;
+  /* --------------About--------------- */
+  .about {
+    border: 1px solid #393e46; /*for reference only delete later*/
+    width: 100%;
+    height: 100vh;
+    font-size: 1rem;
   }
-  
-  /* landing page content */
-  .landing {
-    margin-top: 60px; /* Add a top margin to avoid content overlay */
+
+  .about-me {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 50px 0;
   }
+
+  /* skils */
+  .skills {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 50px;
+  }
+  /* --------------Work--------------- */
+
+  .work {
+    border: 1px solid #393e46; /*for reference only delete later*/
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* --------------Contact--------------- */
+
+  .contact {
+    border: 1px solid #393e46; /*for reference only delete later*/
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/* ===========400px and below css================================================== */
+@media (max-width: 400px) {
+  .navbar{
+    direction:rtl;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar a {
+    border: 1px solid coral; /*for reference only delete later*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* --------------About--------------- */
+  .about {
+    border: 1px solid #393e46; /*for reference only delete later*/
+    width: 100%;
+    height: 100vh;
+    font-size: 1rem;
+  }
+
+  .about-me {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 20px 0;
+  }
+
+  /* skils */
+  .skills {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 20px;
+  }
+
+  /* --------------Work--------------- */
+  /* --------------Contact--------------- */
+}
